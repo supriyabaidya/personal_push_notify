@@ -1,0 +1,68 @@
+https://github.com/mozilla/geckodriver/releases/download/v0.28.0/geckodriver-v0.28.0-linux64.tar.gz
+
+
+tar -xvzf geckodriver*
+
+chmod +x geckodriver
+
+cp geckodriver $HOME/.local/bin
+
+cd $HOME/.local/bin
+
+which firefox
+
+https://developers.google.com/web/updates/2015/03/push-notifications-on-the-open-web
+
+
+https://medium.com/devmins/firebase-cloud-messaging-api-with-python-6c0755e41eb5
+
+
+
+supriyabaidya63@gmail.com
+topsy63krets
+
+
+
+-
+done.
+
+sudo chmod -R 777 /var/www/html
+
+
+pip3 install pyfcm
+
+
+
+https://raturi.in/blog/webpush-notification-using-python-and-flask/
+
+https://wa-notification-a9907.web.app/
+
+
+
+{"endpoint":"https://fcm.googleapis.com/fcm/send/dmt6z6GsYCo:APA91bF9F-iDY99kXrX1T8RmYJr6ltPnAZjv_RqI_J6Y4NcrcvsTregyPErbC6S2C5GcU09mVj-RNUa6Pq2ecX87qu2OavBhbKTJYYoIEJ7lLIv1VVefwkHdIWwJ8ZXCeEfWkAj_OMO5","expirationTime":null,"keys":{"p256dh":"BFrRp_uLkOsjeB76MSQ9VQ8QwnQWDO3yP3DrSjoh8buN5PN9_8G0FZ7xI_3vMmAJUHpbfHUwB2-DUSW9b98GrGo","auth":"Fz9Xgw9il0CqicNFGqxWAw"}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"endpoint":"https://fcm.googleapis.com/fcm/send/duGEMyNoL5U:APA91bF0LzyTbdebXS-0iOM_uiyJRVBk8bfiDVoVD7ISg00RFC4yb2cGRFxfvVd00CZgb8LwctB7-2ABujpM0N7SFwxmHAfMKmLXW4Mn_Ajjw-USao_hE1DPjCubj24m3s7Q5JCY_wf0","expirationTime":null,"keys":{"p256dh":"BMWEkRPoY3-R09hcYMgm2QlctY4aB8aumt8iSrOuWGMFPif88KUSyw13zPXRl6cAO6BrXz4UL9q5Qle4Fc4h9Is","auth":"VgkuaDnxHOhIk9P_RAC7wQ"}}
+export PATH="$HOME/.local/bin:$PATH"
+
+
