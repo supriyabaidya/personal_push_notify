@@ -72,7 +72,7 @@ options = FirefoxOptions()
 
 
 # ///////////////// Init binary & driver
-new_driver_path = '/home//ubuntu/Desktop/My_Workspace/personal_push_notify/geckodriver/geckodriver'
+new_driver_path = '/home/ubuntu/Desktop/My_Workspace/personal_push_notify/geckodriver/geckodriver'
 new_binary_path = '/usr/bin/firefox'
 options.binary_location = new_binary_path
 serv = Service(new_driver_path)
