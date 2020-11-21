@@ -60,24 +60,27 @@ print("PLEASE WAIT STARTING wa_monitor")
 notify = Notify()
 
 options = FirefoxOptions()
-fp = webdriver.FirefoxProfile("kaliprofile")
+#fp = webdriver.FirefoxProfile("kaliprofile")
 
 # useragent = "Mozilla/5.0 (X11; Linux i686; rv:77.0) Gecko/20100101 Firefox/77.0"
 # #works perfectly fine without useragent modification in windows awa heroku
 # fp.set_preference("general.useragent.override", useragent)
 
 # switch headless option accordingly
-options.add_argument('--no-sandbox')
-options.add_argument("--headless")
+#options.add_argument('--no-sandbox')
+#options.add_argument("--headless")
 
 
 # ///////////////// Init binary & driver
-new_driver_path = '/home/kali/Documents/geckodriver/geckodriver'
+new_driver_path = '/home/supriyabaidya63/Desktop/My_Workspace/personal_push_notify/geckodriver/geckodriver'
 new_binary_path = '/usr/bin/firefox'
 options.binary_location = new_binary_path
 serv = Service(new_driver_path)
-driver = webdriver.Firefox(firefox_profile=fp, options=options, service=serv)
-# driver = webdriver.Firefox(firefox_profile=fp, options=options,
+#driver = webdriver.Firefox(firefox_profile=fp, options=options, service=serv)
+driver = webdriver.Firefox(options=options,
+                            executable_path=new_driver_path,
+                            firefox_binary=new_binary_path)
+#driver = webdriver.Firefox(firefox_profile=fp, options=options,
 #                            executable_path='/home/kali/Documents/geckodriver/geckodriver',
 #                            firefox_binary='/usr/bin/firefox')
 driver.get('https://web.whatsapp.com')
