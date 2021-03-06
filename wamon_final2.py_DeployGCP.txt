@@ -1,0 +1,55 @@
+echo $PATH
+vi ~/.bashrc
+
+if [[ "$PATH" != *"$HOME/.local/bin:"* ]]; then
+	PATH="$HOME/.local/bin:$PATH"
+fi
+
+source ~/.bashrc
+
+mkdir wamon
+cd wamon
+git clone https://github.com/supriyabaidya/personal_push_notify.git
+sudo chmod -R 777 personal_push_notify
+cd personal_push_notify
+
+which firefox
+sudo apt-get install firefox-esr
+
+pip3 --version
+sudo apt-get install python3-pip
+
+
+pip3 install selenium
+pip3 install pywebpush
+pip3 install notify-run
+pip3 install pyfcm
+
+notify-run register
+
+
+sudo apt-get install tightvncserver
+
+sudo DEBIAN_FRONTEND=noninteractive apt install --assume-yes xfce4 desktop-base
+
+vncserver
+vncserver -kill :1
+
+vim ~/.vnc/xstartup
+startxfce4 &
+
+vncserver -geometry 1920x1080
+
+
+
+
+---manually run firefox and setup web.ehatsapp.com and then copy profile by using below commands
+
+cd .mozilla
+cd firefox
+cp -R  47elyxd4.default-esr /home/supriyabaidya63/wamon/personal_push_notify/profile
+
+
+python3 wamon_final2.py
+
+
