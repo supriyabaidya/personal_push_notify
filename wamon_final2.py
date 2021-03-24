@@ -115,7 +115,7 @@ while True:
         sleep(5)
         print("NOW TRACKING IS LIVE")
         t = strftime("%d/%m/%Y %H:%M:%S")
-        speako, speakf = True, True
+        speako, speakf, speakOthers = True, True, True
         while True:
             try:
                 status = driver.find_element_by_xpath(
@@ -135,7 +135,8 @@ while True:
 
                     speako = False
                     speakf = True
-                if status != 'online':
+                    speakOthers = True
+                if speakOthers and status != 'online':
                     speako = True
                     notify.send('📴 {} is {} 📴 '.format(name, status))
                     print("{} {} : {}".format(t[11:], name, status) + '\n')
@@ -149,11 +150,13 @@ while True:
                     print(android_noti_result)
 
                     speakf = True
+                    speakOthers = False
                 sleep(1)
             except Exception as ex:
                 #print("Exception IN INNER LOOP OF STATUS CHECKING, str(ex.args): " + str(ex.args))
                 status = "Offline"
                 speako = True
+                speakOthers = True
                 t = strftime("%Y-%m-%d %H:%M:%S")
 
                 if speakf:
