@@ -53,3 +53,8 @@ cp -R  47elyxd4.default-esr /home/supriyabaidya63/wamon/personal_push_notify/pro
 python3 wamon_final2.py
 
 
+
+
+{"endpoint":"https://fcm.googleapis.com/fcm/send/dFOp6X0_Aq8:APA91bEqoLuTtBFfyvKEJhpWFXqh5mF7OxCaL-yVvWymIGFLZ6KFCLw6axnUZIGVPqLdXTly0zUoUvkHwWnYWzdljsA_Zz4Mebaln4KLldlCm88LO1tHfNN6mDBmR9Iy-I_218lQMbRJ","expirationTime":null,"keys":{"p256dh":"BKx7GO5GSQeZ8LpNJJ5-aTFRHm5ay2uRzeOpfXNuexAxzpEiQ0Ztgjf-3eem-BMruCCoybDGrHVhgX8qzSobSCA","auth":"bLgnah1c2cMAFJlHTea_xQ"}}
+
+
