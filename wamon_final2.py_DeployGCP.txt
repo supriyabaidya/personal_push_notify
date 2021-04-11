@@ -50,6 +50,9 @@ cd firefox
 cp -R  47elyxd4.default-esr /home/supriyabaidya63/wamon/personal_push_notify/profile
 
 
+sudo timedatectl set-timezone Asia/Kolkata
+
+
 python3 wamon_final2.py
 
 
